@@ -14,20 +14,25 @@
 <body>
 
 	<div class="container-fluid">
+		<div class="header">
+			<div class="col d-flex justify-content-center">
+				<h2><span id="health">Health: 100 </span></h2>
+				<h2>Target Name: </h2>
+				<h2 id="hits">Hits: </h2>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col d-flex justify-content-center">
 				<img class="target-image w-200" src="assets/Charlie Brown Transparent.png" alt="Charlie Brown Photo">
 			</div>
 		</div>
-		<div class="row">
-			<div class="col d-flex justify-content-center">
-				<h2><span id="enemyHealth">Health: 100</span></h2>
-			</div>
-		</div>
+		<div class="row"></div>
 	</div>
 	<div class="row footer">
 		<div class="col d-flex justify-content-center">
-			<button onclick=slap() type="button" class="btn btn-danger">Slap</button>
+			<button onclick=slap() type="button" class="btn btn-danger">SLAP</button>
+			<button onclick=punch() type="button" class="btn btn-danger">PUNCH</button>
+			<button onclick=kick() type="button" class="btn btn-danger">KICK</button>
 		</div>
 	</div>
 

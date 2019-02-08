@@ -56,11 +56,11 @@ Students will use javascript in order to interact with the DOM to create a dynam
   - Have the punch function decrease the target's health by 5, and kick by 10.
   - Don't forget to call update inside each function.
 2. Declare 2 more variables 'name', and 'hits' where you initialized the health variable. 
-  -Name your target whatever you want, what datatype would a name be?
-  -Set the variable hits with a value of 0, every time the target is hit by a Slap, Punch, or Kick
+  X-Name your target whatever you want, what datatype would a name be?
+  X-Set the variable hits with a value of 0, every time the target is hit by a Slap, Punch, or Kick
     this variable should be increased by 1.
-3. Add a placeholder for target name, and hits inside the header next to health.
-4. Wire everything up like you did for "Slap".
+3. X Add a placeholder for target name, and hits inside the header next to health.
+4. X Wire everything up like you did for "Slap".
 
 ### Step 7 - Testing Time
 1. You should now have a functioning application. Test the following
