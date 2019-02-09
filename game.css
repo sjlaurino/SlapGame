@@ -1,1 +1,30 @@
-/*Only use this file if you want to override bootstrap or create your own style*/
+.btn1{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.btn2{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.btn3{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.btn4{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.btn5{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.btn6{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#health{
+  margin-right: 10px;
+}
+#hits{
+  margin-left: 10px;
+}

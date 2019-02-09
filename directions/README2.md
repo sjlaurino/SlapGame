@@ -129,7 +129,7 @@ target.health -= damage + addMods();
 ```
 
 ### Step 7 - Let the user select the Items.
-- Add a div in the body with an id="items" and put a button for each item
+<!-- - Add a div in the body with an id="items" and put a button for each item
 - Write a function that will allow the user to click each button and giveItem("item") to the target
 - This shouldn't move the items from the items object but make a copy of them in the target.items array.
 
@@ -139,7 +139,7 @@ target.health -= damage + addMods();
  - Visualization: 
  	- Three additional items displayed for users to add
  - Functionality:
- 	- Items affect the current health or the damage rate
+ 	- Items affect the current health or the damage rate -->
 
 ### Bonus Challenges 
 - Draw items to screen dynamically; can you write a function that will itterate over your items list and create a button for each one?

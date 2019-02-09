@@ -17,9 +17,13 @@
 		<header class="mt-5">
 			<div class="row">
 				<div class="col d-flex justify-content-center">
-					<h2><span id="health">Health: 100 </span></h2>
-					<h2>Target Name: Charlie Brown </h2>
-					<h2 id="hits">Hits: 0 </h2>
+					<h1 id="target-name">Slap Charlie Brown </h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col d-flex justify-content-center">
+					<h3><span id="health">Health: 100 </span></h3>
+					<h3 id="hits">Hits: 0 </h3>
 				</div>
 			</div>
 		</header>
@@ -27,7 +31,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col d-flex justify-content-center">
-				<img class="target-image w-200" src="assets/Charlie Brown Transparent.png" alt="Charlie Brown Photo">
+				<img class="target-image w-200 img-fluid" src="assets/Charlie Brown Transparent.png" alt="Charlie Brown Photo">
 			</div>
 		</div>
 	</div>
@@ -35,17 +39,17 @@
 
 	<footer>
 		<div class="row">
-			<div class="col d-flex justify-content-center">
-				<button onclick=slap() type="button" class="btn btn-danger">SLAP</button>
-				<button onclick=punch() type="button" class="btn btn-danger">PUNCH</button>
-				<button onclick=kick() type="button" class="btn btn-danger">KICK</button>
+			<div class="col d-flex justify-content-center attacks">
+				<button onclick=slap() type="button" class="btn btn-danger btn1">SLAP</button>
+				<button onclick=punch() type="button" class="btn btn-danger btn2">PUNCH</button>
+				<button onclick=kick() type="button" class="btn btn-danger btn3">KICK</button>
 			</div>
 		</div>
 		<div class="row">
-			<div id="items" class="col d-flex justify-content-center mt-2">
-				<button onclick="giveFootball()" type="button" class="btn btn-secondary">Yank Football</button>
-				<button onclick="kite()" type="button" class="btn btn-success">Give Kite</button>
-				<button onclick="giveLucy()" type="button" class="btn btn-secondary">Lucy's Deception</button>
+			<div id="items" class="col d-flex justify-content-center mt-2 btn-toolbar">
+				<button onclick="giveFootball()" type="button" class="btn btn-secondary btn4">Yank Football</button>
+				<button onclick="kite()" type="button" class="btn btn-success btn5">Give Kite</button>
+				<button onclick="giveLucy()" type="button" class="btn btn-secondary btn6">Lucy's Deception</button>
 			</div>
 		</div>
 		<div class="row">
