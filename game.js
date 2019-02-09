@@ -19,7 +19,7 @@ let items = {
 
 function addMods2() {
   let modTotal = 0;
-  for (let i = 0; i < target.items.length - 1; i++) {
+  for (let i = 0; i < target.items.length; i++) {
     modTotal += target.items[i].modifier;
   }
   return modTotal
@@ -65,7 +65,8 @@ function giveKite() {
 }
 
 // add function  and object in dictionary for lucys deception
-// get health to stop at 0 and say youve defeated charlie
+// get health to stop at 0 and say youve defeated charlie stop at 100 health
 // style page
+// add progress bar
 
 
