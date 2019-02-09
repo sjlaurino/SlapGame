@@ -23,6 +23,8 @@ let items = {
   }
 }
 
+stopHealth()
+
 function addMods2() {
   let modTotal = 0;
   for (let i = 0; i < target.items.length; i++) {
@@ -33,6 +35,7 @@ function addMods2() {
 
 function slap() {
   target.health -= 1 + addMods2()
+  stopHealth()
   target.hits++
   update();
   target.items = [];
@@ -40,6 +43,7 @@ function slap() {
 
 function punch() {
   target.health -= 5 + addMods2()
+  stopHealth()
   target.hits++
   update();
   target.items = [];
@@ -47,13 +51,14 @@ function punch() {
 
 function kick() {
   target.health -= 10 + addMods2()
+  stopHealth()
   target.hits++
   update();
   target.items = [];
 }
 function kite() {
   target.health += 5
-  target.hits--
+  stopHealth()
   update();
   target.items = [];
 }
@@ -69,9 +74,22 @@ function giveFootball() {
 function giveLucy() {
   target.items.push(items.lucy);
 }
+function reset() {
+  target.health = 100;
+  target.hits = 0;
+  update()
+}
+
+function stopHealth() {
+  if (target.health <= 0) {
+    target.health = 0;
+    alert('You\'ve defeated Charlie! \nClick "Reset" to play again!')
+  } else if (target.health >= 100) {
+    target.health = 100;
+  }
+}
+
 // XX add function and object in dictionary for lucys deception
-// get health to stop at 0 and say youve defeated charlie stop at 100 health
+// XX get health to stop at 0 and say youve defeated charlie stop at 100 health
 // style page
-// add progress bar
-
-
+// add progress bar **Bonus
