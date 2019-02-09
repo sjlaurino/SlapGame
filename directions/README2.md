@@ -1,4 +1,4 @@
-## The Slap Object Game - Part 2
+<!-- ## The Slap Object Game - Part 2
 
 ### Step 1 - The Target Object
 So at this point you have a mostly functional slap game, however its time to refactor and clean up a few problems that could exist. First of all you have a global variable called `health` which is currently being used to control the state of the application. 
@@ -53,9 +53,9 @@ Having our values for health, name, and hits is not the best way to contain our 
 
 #### Warning Refactoring will break your code.... But its okay. Don't be afraid to break things.
 
-Now work on converting your global variables to properties that can be used through a `Target Object`. This will make it so you have to update your code in your `update` function to something like `target.health`
+X-Now work on converting your global variables to properties that can be used through a `Target Object`. This X-will make it so you have to update your code in your `update` function to something like `target.health`
 
-Get your code back up and working with this new object
+X-Get your code back up and working with this new object
 
 ### Step 2 - Items (2pts)
 - It's now time to add items to our game. Items are objects that will be created to allow modifications to our attacks.
@@ -86,9 +86,9 @@ var items = {
 }
 ```
  - We can now easily reference the fire item by calling items.fire.
- - What would items.fire.name return?
+ X- - What would items.fire.name return? -->
  
-### Step 4 - Give some items to our target
+<!-- ### Step 4 - Give some items to our target
 - We are using an object to store the master list of items in our game. However, we need to be able to give our 
   target items. In this case, we need to use an array, because it may be possible for the user to have multiples of the same item (if not you may want to use an object).
 1. Create an array property named items on the target object.
@@ -98,10 +98,10 @@ var ryu = {
   health: 100,
   ....
   ....
-  items:[]
+  items:[] -->
 ``` 
 
-2. Keep in mind that the \[items] object that is global, is completly different than the \[items] array on the target.
+<!-- 2. Keep in mind that the \[items] object that is global, is completly different than the \[items] array on the target.
 3. Now write a function (something like giveFire()) that will push an item from the global items object into the items array on the target.
  
 ### Step 5 - REDUCE THE DAMAGE!... almost
@@ -115,7 +115,7 @@ var ryu = {
 	3. Inside the loop, increase the running total by the 'current items' modifier value
 	4. Arrays need to be accessed by index. \[i]
 	
-3. Have the function return the total.
+3. Have the function return the total. -->
 
 ### Step 6 - REDUCE THE DAMAGE!... for real this time.
 - Before you begin this step, remember math in javascript

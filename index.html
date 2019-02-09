@@ -14,27 +14,40 @@
 <body>
 
 	<div class="container-fluid">
-		<div class="header">
-			<div class="col d-flex justify-content-center">
-				<h2><span id="health">Health: 100 </span></h2>
-				<h2>Target Name: </h2>
-				<h2 id="hits">Hits: </h2>
+		<header class="mt-5">
+			<div class="row">
+				<div class="col d-flex justify-content-center">
+					<h2><span id="health">Health: 100 </span></h2>
+					<h2>Target Name: Charlie Brown </h2>
+					<h2 id="hits">Hits: 0 </h2>
+				</div>
 			</div>
-		</div>
+		</header>
+	</div>
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col d-flex justify-content-center">
 				<img class="target-image w-200" src="assets/Charlie Brown Transparent.png" alt="Charlie Brown Photo">
 			</div>
 		</div>
-		<div class="row"></div>
 	</div>
-	<div class="row footer">
-		<div class="col d-flex justify-content-center">
-			<button onclick=slap() type="button" class="btn btn-danger">SLAP</button>
-			<button onclick=punch() type="button" class="btn btn-danger">PUNCH</button>
-			<button onclick=kick() type="button" class="btn btn-danger">KICK</button>
+
+
+	<footer>
+		<div class="row">
+			<div class="col d-flex justify-content-center">
+				<button onclick=slap() type="button" class="btn btn-danger">SLAP</button>
+				<button onclick=punch() type="button" class="btn btn-danger">PUNCH</button>
+				<button onclick=kick() type="button" class="btn btn-danger">KICK</button>
+			</div>
 		</div>
-	</div>
+		<div class="row">
+			<div id="items" class="col d-flex justify-content-center mt-2">
+				<button onclick=football() type="button" class="btn btn-secondary">Football</button>
+				<button onclick=football() type="button" class="btn btn-success">Kite</button>
+			</div>
+		</div>
+	</footer>
 
 
 	<script src="game.js"></script>
