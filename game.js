@@ -17,7 +17,6 @@ let items = {
   }
 }
 
-
 function addMods2() {
   let modTotal = 0;
   for (let i = 0; i < target.items.length - 1; i++) {
@@ -30,20 +29,28 @@ function slap() {
   target.health -= 1 + addMods2()
   target.hits++
   update();
+  target.items = [];
 }
 
 function punch() {
   target.health -= 5 + addMods2()
   target.hits++
   update();
+  target.items = [];
 }
 
 function kick() {
   target.health -= 10 + addMods2()
   target.hits++
   update();
+  target.items = [];
 }
-
+function kite() {
+  target.health += 5
+  target.hits--
+  update();
+  target.items = [];
+}
 function update() {
   document.getElementById('health').innerHTML = 'Health: ' + target.health.toString();
   document.getElementById('hits').innerHTML = 'Hits: ' + target.hits.toString();
@@ -57,5 +64,8 @@ function giveKite() {
   target.items.push(items.kite);
 }
 
+// add function  and object in dictionary for lucys deception
+// get health to stop at 0 and say youve defeated charlie
+// style page
 
 
