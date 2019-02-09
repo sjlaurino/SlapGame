@@ -7,57 +7,54 @@ let target = {
 let items = {
   football: {
     name: 'Football',
-    modifier: -10,
+    modifier: 10,
     description: 'Shankapotomous!'
   },
   kite: {
     name: 'Kite',
-    modifier: 5,
+    modifier: -5,
     description: 'It\'s a perfectly windy day for flying kites!',
   }
 }
 
 
-
-function addMods() {
+function addMods2() {
   let modTotal = 0;
   for (let i = 0; i < target.items.length - 1; i++) {
     modTotal += target.items[i].modifier;
-    target.health - modTotal;
   }
-  console.log(modTotal);
+  return modTotal
 }
-
 
 function slap() {
-  target.health--
+  target.health -= 1 + addMods2()
   target.hits++
   update();
-  addMods()
 }
+
 function punch() {
-  target.health -= 5
+  target.health -= 5 + addMods2()
   target.hits++
   update();
-  addMods()
 }
+
 function kick() {
-  target.health -= 10
+  target.health -= 10 + addMods2()
   target.hits++
   update();
-  addMods()
 }
 
 function update() {
   document.getElementById('health').innerHTML = 'Health: ' + target.health.toString();
   document.getElementById('hits').innerHTML = 'Hits: ' + target.hits.toString();
 }
-function yankFootball() {
+
+function giveFootball() {
   target.items.push(items.football);
 }
 
-function giveFootball() {
-  yankFootball()
+function giveKite() {
+  target.items.push(items.kite);
 }
 
 
