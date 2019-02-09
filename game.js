@@ -4,6 +4,7 @@ let target = {
   hits: 0,
   items: []
 }
+
 let items = {
   football: {
     name: 'Football',
@@ -14,6 +15,11 @@ let items = {
     name: 'Kite',
     modifier: -5,
     description: 'It\'s a perfectly windy day for flying kites!',
+  },
+  lucy: {
+    name: 'Lucy\'s Deception',
+    modifier: 5,
+    description: 'Lucy fooled Charlie!'
   }
 }
 
@@ -60,11 +66,10 @@ function giveFootball() {
   target.items.push(items.football);
 }
 
-function giveKite() {
-  target.items.push(items.kite);
+function giveLucy() {
+  target.items.push(items.lucy);
 }
-
-// add function  and object in dictionary for lucys deception
+// XX add function and object in dictionary for lucys deception
 // get health to stop at 0 and say youve defeated charlie stop at 100 health
 // style page
 // add progress bar
