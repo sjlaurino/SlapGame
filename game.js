@@ -23,8 +23,6 @@ let items = {
   }
 }
 
-stopHealth()
-
 function addMods2() {
   let modTotal = 0;
   for (let i = 0; i < target.items.length; i++) {
@@ -65,6 +63,8 @@ function kite() {
 function update() {
   document.getElementById('health').innerHTML = 'Health: ' + target.health.toString();
   document.getElementById('hits').innerHTML = 'Hits: ' + target.hits.toString();
+  document.getElementById('progress-number').innerText = target.health.toString();
+  document.getElementById('progress-number').style.width = target.health + '%';
 }
 
 function giveFootball() {
@@ -83,11 +83,13 @@ function reset() {
 function stopHealth() {
   if (target.health <= 0) {
     target.health = 0;
+    // document.getElementById('insult').innerHTML = 'I hope you feel good about yourself... \nYou just killed the most beloved childrens character in history.'
     alert('You\'ve defeated Charlie! \nClick "Reset" to play again!')
   } else if (target.health >= 100) {
     target.health = 100;
   }
 }
+
 
 // XX add function and object in dictionary for lucys deception
 // XX get health to stop at 0 and say youve defeated charlie stop at 100 health

@@ -28,3 +28,21 @@
 #hits{
   margin-left: 10px;
 }
+#insult{
+color:rgb(1, 45, 240);
+text-shadow: 1px 1px black;
+text-align: center;
+}
+.progress{
+  width: 75%;
+}
+.progress-bar{
+  width: 75%;
+}
+#progress-number{
+  width: 100;
+}
+.bg-img{
+background-size: contain;
+height: 1000px;
+}
