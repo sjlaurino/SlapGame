@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>SlapGame</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link rel="stylesheet" href="game.css">
@@ -13,13 +14,13 @@
 
 <body class="bg-img img-fluid" background="assets/Charlie background.jpg">
 
-	<header class="container-fluid mt-5">
+	<header class="container-fluid mt-3">
 		<div class="row">
 			<div class="col d-flex justify-content-center">
 				<h1 id="target-name">Lucy van Pelt vs Charlie Brown</h1>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row mt-2">
 			<div class="col-5 d-flex justify-content-center">
 				<h3 id="lucy-health">Health: 100</h3>
 				<h3 id="lucy-hits">Hits: 0</h3>
@@ -52,7 +53,24 @@
 			<div class="col-5 d-flex justify-content-center img-fluid">
 				<img src="assets/Lucy.png" alt="">
 			</div>
-			<div class="col-2"></div>
+			<div class="col-2">
+				<!-- <div id="modal" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h4 class="modal-title">You\'ve defeated Charlie Brown!</h4>
+							</div>
+							<div class="modal-body">
+								<p>Click 'reset' to play again.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
 			<div class="col-5 d-flex align-items-end justify-content-center img-fluid">
 				<img class="target-image" src="assets/Charlie Brown Transparent.png" alt="Charlie Brown Photo">
 			</div>
@@ -66,7 +84,7 @@
 				<h4>Player 1</h4>
 			</div>
 			<div class="col-2 mb-2 d-flex justify-content-center text-center">
-				<h3>Attack Charlie:</h3>
+				<h3>Attacks:</h3>
 			</div>
 			<div class="col-5 d-flex justify-content-center text-center">
 				<h4>CPU</h4>

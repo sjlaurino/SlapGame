@@ -99,7 +99,11 @@ function showAlert() {
   }
 }
 
+// function startModal() {
+//   $('#modal').modal('show')
+// }
 
+// startModal()
 
 
 
@@ -126,6 +130,10 @@ function charlieAttack() {
   targets.lucy.health -= Math.floor((Math.random() * 15) + 1)
   targets.lucy.hits++
 }
+
+setTimeout(function gameStart() {
+  alert('Welcome to Peanutville, Lucy! \nYou are about to faceoff with your nemesis... Charlie Brown \nYou can choose any of the 3 attacks below or choose a modifier to make your attack stronger! \nBe careful though, one of the modifiers increases Charlie\'s health.')
+}, 1500);
 
 
 // XX add function and object in dictionary for lucys deception
