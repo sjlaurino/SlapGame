@@ -132,4 +132,7 @@ function charlieAttack() {
 // XX get health to stop at 0 and say youve defeated charlie stop at 100 health
 // style page
 // XX add progress bar **Bonus
+
+// different color for progress bar wont work
 // bootstrap modal to make custom alert at the
+// get alert to show affter 0
